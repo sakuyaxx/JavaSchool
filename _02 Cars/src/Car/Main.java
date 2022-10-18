@@ -3,12 +3,10 @@ package Car;
 public class Main {
     public static void main(String[] args) {
 
-        Car c1 = new Car(7.5, "Aston Martin", "AM001");
-        c1.maxFuelAmount = 120.0;
+        Car c1 = new Car(7.5, "Aston Martin", "AM001", 120.0);
         c1.fuelAmount = 70.0;
 
-        Car c2 = new Car(3.3, "Honda", "H0001");
-        c2.maxFuelAmount = 150.0;
+        Car c2 = new Car(3.3, "Honda", "H0001", 150.0);
         c2.fuelAmount = 20.0;
 
         /* System.out.println(c2.fuelAmount);
@@ -20,7 +18,8 @@ public class Main {
         c2.honk(13);
         c1.getRemainingRange(); */
 
-        Car c3 = new Car(7.69, "Opel", "O0001");
+        Car c3 = new Car(7.69, "Opel", "O0001", 135.5);
+        c3.fuelAmount = 85.3;
 
         System.out.println(c3.fuelConsumption);
 

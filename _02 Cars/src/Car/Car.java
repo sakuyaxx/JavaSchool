@@ -2,20 +2,51 @@ package Car;
 
 public class Car {
     //Gedächtnisvariablen
-    private String color;
+
     public Double fuelConsumption;
     public Double fuelAmount;
     public String serialNumber;
     public String brandName;
     public Double maxFuelAmount;
 
-    public Car(Double fuelConsumption, String brandName, String serialNumber){
+    public Car(Double fuelConsumption, String brandName, String serialNumber, Double maxFuelAmount){
         //Variablen am besten gleich nennen, wie die Gedächtnisvariablen
         // Jedoch nicht vergessen, dass das andere Variablen sind
         // --> lokale Variablen
+
         this.fuelConsumption = fuelConsumption;
         this.brandName = brandName;
         this.serialNumber = serialNumber;
+        this.maxFuelAmount = maxFuelAmount;
+    }
+
+    public Double getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public void setFuelConsumption(Double fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public Double getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public void setFuelAmount(Double fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public Double getMaxFuelAmount() {
+        return maxFuelAmount;
     }
 
     //Mehoden

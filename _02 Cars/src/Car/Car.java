@@ -9,6 +9,15 @@ public class Car {
     public String brandName;
     public Double maxFuelAmount;
 
+    public Car(Double fuelConsumption, String brandName, String serialNumber){
+        //Variablen am besten gleich nennen, wie die Gedächtnisvariablen
+        // Jedoch nicht vergessen, dass das andere Variablen sind
+        // --> lokale Variablen
+        this.fuelConsumption = fuelConsumption;
+        this.brandName = brandName;
+        this.serialNumber = serialNumber;
+    }
+
     //Mehoden
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
@@ -34,7 +43,7 @@ public class Car {
 
     public void getRemainingRange(){
         //Restreichweite des Autos
-        Double remainingRange = this.fuelAmount / this.fuelConsumption;
+        double remainingRange = this.fuelAmount / this.fuelConsumption;
         System.out.println("Remaining range: " + remainingRange);
     }
 }

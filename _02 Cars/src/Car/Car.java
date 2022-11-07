@@ -3,56 +3,28 @@ package Car;
 public class Car {
     //Gedächtnisvariablen
 
+    private Engine engine;
     public Double fuelConsumption;
     public Double fuelAmount;
     public String serialNumber;
     public String brandName;
     public Double maxFuelAmount;
 
-    public Car(Double fuelConsumption, String brandName, String serialNumber, Double maxFuelAmount){
+    public Car(Engine engine, Double fuelConsumption, String brandName, String serialNumber, Double maxFuelAmount){
         //Variablen am besten gleich nennen, wie die Gedächtnisvariablen
         // Jedoch nicht vergessen, dass das andere Variablen sind
         // --> lokale Variablen
-
+        this.engine = engine;
         this.fuelConsumption = fuelConsumption;
         this.brandName = brandName;
         this.serialNumber = serialNumber;
         this.maxFuelAmount = maxFuelAmount;
     }
 
-    public Double getFuelConsumption() {
-        return fuelConsumption;
-    }
-
-    public void setFuelConsumption(Double fuelConsumption) {
-        this.fuelConsumption = fuelConsumption;
-    }
-
-    public Double getFuelAmount() {
-        return fuelAmount;
-    }
-
-    public void setFuelAmount(Double fuelAmount) {
-        this.fuelAmount = fuelAmount;
-    }
-
-    public String getSerialNumber() {
-        return serialNumber;
-    }
-
-
-    public String getBrandName() {
-        return brandName;
-    }
-
-    public Double getMaxFuelAmount() {
-        return maxFuelAmount;
-    }
-
-    //Mehoden
+    //Methoden
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println("I am driving");
+        System.out.println("I am driving and I have " + this.getEngine().getHorsePower() + " HP.");
     }
 
     public void brake() {
@@ -77,4 +49,14 @@ public class Car {
         double remainingRange = this.fuelAmount / this.fuelConsumption;
         System.out.println("Remaining range: " + remainingRange);
     }
+
+    public Engine getEngine() {return engine;}
+    public void setEngine(Engine engine) {this.engine = engine;}
+    public Double getFuelConsumption() {return fuelConsumption;}
+    public Double getFuelAmount() {return fuelAmount;}
+    public void setFuelAmount(Double fuelAmount) {this.fuelAmount = fuelAmount;}
+    public String getSerialNumber() {return serialNumber;}
+    public String getBrandName() {return brandName;}
+    public Double getMaxFuelAmount() {return maxFuelAmount;}
+
 }

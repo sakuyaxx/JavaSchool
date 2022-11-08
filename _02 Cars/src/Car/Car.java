@@ -8,6 +8,8 @@ public class Car {
 
     private Engine engine;
     public List<RearMirror> mirrors;
+
+    public List<Tyre> tyres;
     public Double fuelConsumption;
     public Double fuelAmount;
     public String serialNumber;
@@ -24,6 +26,7 @@ public class Car {
         this.serialNumber = serialNumber;
         this.maxFuelAmount = maxFuelAmount;
         this.mirrors = new ArrayList<>();
+        this.tyres = new ArrayList<>();
     }
 
     //Methoden
@@ -33,6 +36,14 @@ public class Car {
 
     public List<RearMirror> getMirrors() {
         return mirrors;
+    }
+
+    public void addTyre(Tyre tyre){
+        this.tyres.add(tyre);
+    }
+
+    public List<Tyre> getTyres() {
+        return tyres;
     }
 
     public void drive() {

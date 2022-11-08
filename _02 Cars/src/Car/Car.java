@@ -1,9 +1,13 @@
 package Car;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     //Gedächtnisvariablen
 
     private Engine engine;
+    public List<RearMirror> mirrors;
     public Double fuelConsumption;
     public Double fuelAmount;
     public String serialNumber;
@@ -19,9 +23,18 @@ public class Car {
         this.brandName = brandName;
         this.serialNumber = serialNumber;
         this.maxFuelAmount = maxFuelAmount;
+        this.mirrors = new ArrayList<>();
     }
 
     //Methoden
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
+    }
+
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
         System.out.println("I am driving and I have " + this.getEngine().getHorsePower() + " HP.");

@@ -1,3 +1,5 @@
+package Remote;
+
 public class Battery {
 //    Eine Fernbedienung hat 2 Batterien
 //    Jede Batterie merkt sich seinen Speicherstatus
@@ -7,5 +9,15 @@ public class Battery {
 //    Bei turnOn() werden beide Batterien um 5% geschwächt. Jede Batterie meldet sich mit "Verbraucher angeschlossen"
 //    Bei turnOff() melden beide Batterien "Kein Verbraucher angeschlossen"
 
+    public String batteryType;
+    public Double chargingStatus;
 
+    public Battery(String batteryType, Double chargingStatus) {
+        this.batteryType = batteryType;
+        this.chargingStatus = chargingStatus;
+    }
+
+    public String getBatteryType() {return batteryType;}
+    public Double getChargingStatus() {return chargingStatus;}
+    public void setChargingStatus(Double chargingStatus) {this.chargingStatus = chargingStatus;}
 }

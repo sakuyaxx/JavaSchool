@@ -17,6 +17,15 @@ public class Battery {
         this.chargingStatus = chargingStatus;
     }
 
+    public void turnOn(){
+        this.chargingStatus -= 0.05;
+        System.out.println("Verbraucher angeschlossen");
+    }
+
+    public void turnOff(){
+        System.out.println("Kein Verbraucher angeschlossen");
+    }
+
     public String getBatteryType() {return batteryType;}
     public Double getChargingStatus() {return chargingStatus;}
     public void setChargingStatus(Double chargingStatus) {this.chargingStatus = chargingStatus;}

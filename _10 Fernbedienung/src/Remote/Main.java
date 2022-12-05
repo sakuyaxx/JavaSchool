@@ -12,7 +12,9 @@ public class Main {
         R1.addBattery(B1);
         R1.addBattery(B2);
 
+        //R1.getStatus();
 
-        System.out.println(R1.getBattery().get(1).getChargingStatus());
+
+        //System.out.println(R1.getBattery().get(1).getChargingStatus());
     }
 }

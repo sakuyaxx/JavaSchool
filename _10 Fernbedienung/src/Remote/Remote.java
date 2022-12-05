@@ -29,7 +29,8 @@ public class Remote {
     }
 
     public void getStatus(){
-
+        //Double chargingStatus = (this.getBattery().get(1).chargingStatus) + (this.getBattery().get(2).chargingStatus) / 2;
+        //System.out.println(chargingStatus);
     }
 
     public int getSerialNumber() {

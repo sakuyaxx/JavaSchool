@@ -6,7 +6,7 @@ public class Main {
 
         Engine E1 = new Engine("Benzin", 250.0);
 
-        Car C1 = new Car("purple", 250.69, 50.0, 8.5, M1, E1, 50001.0);
+        Car C1 = new Car("purple", 250.69, 50.0, 8.5, M1, E1, 40001.0);
 
         C1.getFinalPrice();
         C1.getFuelConsumption();

@@ -27,7 +27,10 @@ public class Car {
     public void getFuelConsumption(){
         if (distanceDriven >= 50000){
             this.baseConsumption = this.baseConsumption + (this.baseConsumption * 0.098);
-            System.out.println("You've driven more than 50.000 km! Your fuel consumption will go up to " + this.baseConsumption + " liters.");
+            System.out.println("You've driven more than 50.000 km! Your fuel consumption will go up to " + this.baseConsumption);
+        }
+        else {
+            System.out.println("You've driven less than 50.000 km. Therefore, your fuel consumption is: " + this.baseConsumption);
         }
     }
 

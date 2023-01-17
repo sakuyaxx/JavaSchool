@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Doggo/Doggo.iml" filepath="$PROJECT_DIR$/Doggo/Doggo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSchool.iml" filepath="$PROJECT_DIR$/JavaSchool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SunCollector/SunCollector.iml" filepath="$PROJECT_DIR$/SunCollector/SunCollector.iml" />
       <module fileurl="file://$PROJECT_DIR$/_01 Zahlen sortieren/_01 Zahlen sortieren.iml" filepath="$PROJECT_DIR$/_01 Zahlen sortieren/_01 Zahlen sortieren.iml" />
       <module fileurl="file://$PROJECT_DIR$/_02 Cars/_02 Cars.iml" filepath="$PROJECT_DIR$/_02 Cars/_02 Cars.iml" />
       <module fileurl="file://$PROJECT_DIR$/_10 Fernbedienung/_10 Fernbedienung.iml" filepath="$PROJECT_DIR$/_10 Fernbedienung/_10 Fernbedienung.iml" />

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Doggo/Doggo.iml" filepath="$PROJECT_DIR$/Doggo/Doggo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSchool.iml" filepath="$PROJECT_DIR$/JavaSchool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomActorFactory/RandomActorFactory.iml" filepath="$PROJECT_DIR$/RandomActorFactory/RandomActorFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/SunCollector/SunCollector.iml" filepath="$PROJECT_DIR$/SunCollector/SunCollector.iml" />
       <module fileurl="file://$PROJECT_DIR$/_01 Zahlen sortieren/_01 Zahlen sortieren.iml" filepath="$PROJECT_DIR$/_01 Zahlen sortieren/_01 Zahlen sortieren.iml" />
       <module fileurl="file://$PROJECT_DIR$/_02 Cars/_02 Cars.iml" filepath="$PROJECT_DIR$/_02 Cars/_02 Cars.iml" />

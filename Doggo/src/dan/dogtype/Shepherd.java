@@ -1,4 +1,4 @@
 package dan.dogtype;
 
-public class Shepherd {
+public class Shepherd extends ADog{
 }

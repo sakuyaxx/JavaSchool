@@ -1,4 +1,4 @@
 package Observer.System;
 
-public class Heizung {
+public class Heizung extends ASystem{
 }

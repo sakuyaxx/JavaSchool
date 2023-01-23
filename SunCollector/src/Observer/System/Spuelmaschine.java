@@ -1,4 +1,4 @@
 package Observer.System;
 
-public class Spuelmaschine {
+public class Spuelmaschine extends ASystem{
 }

@@ -1,4 +1,4 @@
 package Observer.System;
 
-public class Laderegler {
+public class Laderegler extends ASystem{
 }
